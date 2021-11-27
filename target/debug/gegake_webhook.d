@@ -1,1 +1,1 @@
-/home/gegake/Dokumente/codin/mosetup/gegake_webhook/target/debug/gegake_webhook: /home/gegake/Dokumente/codin/mosetup/gegake_webhook/src/lib.rs /home/gegake/Dokumente/codin/mosetup/gegake_webhook/src/main.rs
+C:\Users\rehcr\Documents\Codin\git-repos\rusty-webhook\target\debug\gegake_webhook.exe: C:\Users\rehcr\Documents\Codin\git-repos\rusty-webhook\src\lib.rs C:\Users\rehcr\Documents\Codin\git-repos\rusty-webhook\src\main.rs

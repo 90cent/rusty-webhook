@@ -1,8 +1,23 @@
+use std::{env,thread};
+
 use gegake_webhook::discord::*;
 
 pub fn main() {
-    let url = "https://discord.com/api/webhooks/896808573491888158/NcUBMrS728DVJUXUxM0ii9LsqzZkYwfXdggvWWQR02Ow33j1x19ow4LxtHhq5Ag40I6Q";
-    let webhook = create_webhook("http://aaa.com", "nickname", "test");
-    webhook.send(&url);
+    let arguments: Vec<String> = env::args().collect();
+
+    println!("{:#?}",arguments);
+
+    if arguments.len() < 4 {
+        println!("SYNTAX: URL NICKNAME AVATAR-URL CONTENT aka message")
+    }
+
+    let url = &arguments[1];
+    let nickname = &arguments[2];
+    let avatar = &arguments[3];
+    let content = arguments[4].clone();
+
+
+    let webhook = create_webhook(avatar.as_str(), nickname.as_str(),content);
+    webhook.send(url);
 }
 
