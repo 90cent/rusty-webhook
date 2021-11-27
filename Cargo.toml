@@ -1,5 +1,5 @@
 [package]
-name = "gegake_webhook"
+name = "rusty-webhook"
 version = "0.1.0"
 edition = "2018"
 
@@ -9,5 +9,8 @@ edition = "2018"
 ureq = {version = "*", features = ["json"]}
 serde_json = {version = "*"}
 serde = {version = "*", features = ["derive"]}
+<<<<<<< HEAD
 surf = "2.3.1"
 async-trait = "0.1.51"
+=======
+>>>>>>> a3b3e22e89fe3f30a86a47fc729ddd8c8d0f516e
