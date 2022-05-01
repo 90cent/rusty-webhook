@@ -1,6 +1,6 @@
 use std::{env,thread};
+use rusty_webhook::discord::{Webhook,WebHook, self};
 
-use gegake_webhook::discord::*;
 
 pub fn main() {
     let arguments: Vec<String> = env::args().collect();
@@ -17,7 +17,7 @@ pub fn main() {
     let content = arguments[4].clone();
 
 
-    let webhook = create_webhook(avatar.as_str(), nickname.as_str(),content);
+    let webhook = discord::create_webhook(avatar.as_str(), nickname.as_str(),content);
     webhook.send(url);
 }
 
